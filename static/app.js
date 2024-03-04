@@ -59,8 +59,8 @@ class Chatbox {
                 'Content-Type': 'application/json'
             },
         })
-        promise.then(r => r.json())
-        promise.then(r => {
+        .then(r => r.json())
+        .then(r => {
             let msg2 = {name: "Sam", message: r.answer};
             this.messages.push(msg2);
             this.updateChatText(chatbox)
