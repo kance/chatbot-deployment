@@ -1,3 +1,7 @@
+# viene de https://github.com/patrickloeber/chatbot-deployment
+# https://www.youtube.com/watch?v=a37BL0stIuM&ab_channel=PatrickLoeber
+
+
 from flask import Flask, render_template, request, jsonify
 
 from chat import get_response

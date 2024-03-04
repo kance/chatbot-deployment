@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-from nltk_utils import bag_of_words, tokenize, stem
+from nltk_utils_es import bag_of_words, tokenize_es_1, stem_es
 from model import NeuralNet
 
 with open('intents.json', 'r') as f:
@@ -22,7 +22,7 @@ for intent in intents['intents']:
     tags.append(tag)
     for pattern in intent['patterns']:
         # tokenize each word in the sentence
-        w = tokenize(pattern)
+        w = tokenize_es_1(pattern)
         # add to our words list
         all_words.extend(w)
         # add to xy pair
@@ -30,7 +30,7 @@ for intent in intents['intents']:
 
 # stem and lower each word
 ignore_words = ['?', '.', '!']
-all_words = [stem(w) for w in all_words if w not in ignore_words]
+all_words = [stem_es(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))

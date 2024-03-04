@@ -3,33 +3,37 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
+        "Hola",
+        "Ey",
         "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Cómo estás",
+        "¿Hay alguien ahí?",
+        "Qué hacés?",
+        "Buen día",
+        "Buenas tardes",
+        "Buenas noches"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Ey :-)",
+        "Hola, gracias por visitarnos",
+        "Hola, ¿qué puedo hacer por vos?",
+        "Hola, ¿en qué puedo ayudar?",
+        "Hola, ¿en qué puedo ayudar hoy?"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Adiós", "Hasta luego", "Chau"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Hasta luego, gracias por visitarnos",
+        "Que tengsa un lindo día",
+        "¡Adiós! Volvé pronto."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": ["¡Mil gracias!", "Gracias", "Muy útil"],
+      "responses": ["¡Encantada de poder ayudarte!", "¡En cualquier momento!", "Es un placer"]
     },
     {
       "tag": "items",
@@ -46,14 +50,16 @@
     {
       "tag": "payments",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "¿Aceptan tarjetas de crédito?",
+        "¿Aceptan MasterCard?",
+        "¿Aceptan Visa?",
+        "¿Aceptan Mercadopago?",
+        "¿Puedo pagar con PayPal?",
+        "¿Puedo pagar en efectivo?"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Aceptamos VISA, Mastercard, Mercadopago y Paypal",
+        "Aceptamos la mayoría de las principales tarjetas de crédito, Mercadopago y Paypal"
       ]
     },
     {
